@@ -5,7 +5,7 @@ All experiments in this repository run on Apple Silicon (Mac M5) with 32 GB of u
 ## Environment
 
 - Operating system: macOS 25.2 (darwin)
-- Python: 3.9.6 (system) — the code is Python 3.9 compatible
+- Python: 3.9.6 (system) - the code is Python 3.9 compatible
 - Torch: 2.5.1 with Apple MPS backend for FLAN-T5, CPU for Qwen (see caveat below)
 - Transformers: 4.44.x
 - Sentence Transformers: 2.6+
@@ -46,7 +46,7 @@ Torch 2.5 has an `mps_matmul` "incompatible dimensions" bug that crashes Qwen 2.
 | HotpotQA (distractor) | HuggingFace `hotpot_qa`, subset `distractor` | validation | 7,405 |
 | 2WikiMultiHop | HuggingFace `cmriat/2wikimultihopqa` | validation | 12,576 |
 | MuSiQue-Ans | HuggingFace `dgslibisey/MuSiQue` | validation (answerable only) | ~2,417 |
-| PolicyBench-Synth | Built by `code/data_loaders/policybench.py` | — | 500 (any n) |
+| PolicyBench-Synth | Built by `code/data_loaders/policybench.py` | n/a | 500 (any n) |
 
 Sizes used in the paper's tables:
 

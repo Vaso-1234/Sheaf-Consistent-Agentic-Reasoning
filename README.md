@@ -8,10 +8,10 @@ Author names and affiliations are withheld for double-blind review.
 
 ## What this repository contains
 
-- `code/` — data loaders, retrievers, SCAR verifier, baselines, analysis scripts
-- `scripts/` — convenience drivers for rescoring and ablations
-- `outputs/` — per-run JSONL predictions and aggregate summaries
-- `manuscript/` — anonymised LaTeX source, figures, and compiled PDF
+- `code/` - data loaders, retrievers, SCAR verifier, baselines, analysis scripts
+- `scripts/` - convenience drivers for rescoring and ablations
+- `outputs/` - per-run JSONL predictions and aggregate summaries
+- `manuscript/` - anonymised LaTeX source, figures, and compiled PDF
 - `requirements.txt`, `run_all.sh`, `REPRODUCIBILITY.md`
 
 ## Datasets
