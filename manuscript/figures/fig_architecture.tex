@@ -1,0 +1,37 @@
+% SCAR architecture diagram, drawn with TikZ so it renders directly in
+% Elsevier's elsarticle without any external toolchain.
+\begin{tikzpicture}[
+    node distance=0.5cm and 0.9cm,
+    every node/.style={font=\small},
+    box/.style={draw, rounded corners=2pt, align=center, minimum height=0.9cm, inner sep=4pt},
+    src/.style={box, fill=black!5, minimum width=2.2cm},
+    proc/.style={box, fill=black!8, minimum width=2.4cm},
+    gate/.style={box, diamond, aspect=2, fill=black!10, minimum width=2.6cm},
+    outbox/.style={box, fill=black!3, minimum width=2.8cm},
+    ->,>=stealth]
+
+  \node[box, minimum width=2.6cm] (q) {Query $q$};
+
+  \node[src, right=of q] (llm) {LLM samples\\ $A=\{a_1,\dots,a_N\}$};
+
+  \node[src, below left=1.0cm and -0.4cm of q] (dense) {Dense passages $E_p$};
+  \node[src, below=0.35cm of dense] (bm25) {BM25 passages $E_t$};
+  \node[src, below=0.35cm of bm25] (kg) {KG triples $E_g$};
+
+  \node[proc, right=of llm] (commit) {Commitment\\ vectors $c_s(a_i)$};
+  \node[gate, right=of commit] (gate) {Gate: $\pi^\star \ge \gamma$?};
+  \node[proc, below=0.7cm of gate] (sheaf) {Sheaf energy\\ $\mathcal E(a_i)$};
+  \node[outbox, right=of gate] (maj) {Majority answer\\ (fast path)};
+  \node[outbox, right=of sheaf] (ans) {SCAR answer\\ $\arg\max\ \text{score}(a_i)$};
+
+  \draw (q) -- (llm);
+  \draw (dense) -- ++(3.2,0) |- (commit);
+  \draw (bm25) -- ++(3.2,0) |- (commit);
+  \draw (kg) -- ++(3.2,0) |- (commit);
+  \draw (llm) -- (commit);
+  \draw (commit) -- (gate);
+  \draw (gate) -- node[above,font=\scriptsize]{yes} (maj);
+  \draw (gate) -- node[left,font=\scriptsize]{no} (sheaf);
+  \draw (sheaf) -- (ans);
+
+\end{tikzpicture}

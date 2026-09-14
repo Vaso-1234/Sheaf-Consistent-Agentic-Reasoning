@@ -1,0 +1,131 @@
+{
+  "model": "google/flan-t5-large",
+  "dataset": "policybench",
+  "n_actual": 250,
+  "conflict_rate": 0.5,
+  "results": {
+    "n": 250,
+    "methods": {
+      "single_shot": {
+        "em_mean": 0.28,
+        "em_ci95": [
+          0.228,
+          0.3420999999999999
+        ],
+        "f1_mean": 0.638526984126984,
+        "loose_em_mean": 0.488,
+        "hit_mean": 0.488,
+        "hit_ci95": [
+          0.428,
+          0.556
+        ],
+        "grounded_mean": 0.488,
+        "grounded_ci95": [
+          0.428,
+          0.556
+        ],
+        "latency_ms_mean": 159.26351070404053,
+        "latency_ms_p95": 225.7028579711913,
+        "tokens_mean": 289.62
+      },
+      "self_consistency": {
+        "em_mean": 0.284,
+        "em_ci95": [
+          0.22990000000000002,
+          0.344
+        ],
+        "f1_mean": 0.6236857142857143,
+        "loose_em_mean": 0.468,
+        "hit_mean": 0.468,
+        "hit_ci95": [
+          0.408,
+          0.532
+        ],
+        "grounded_mean": 0.468,
+        "grounded_ci95": [
+          0.408,
+          0.532
+        ],
+        "latency_ms_mean": 873.7031726837158,
+        "latency_ms_p95": 1175.2861857414243,
+        "tokens_mean": 1448.28
+      },
+      "graphrag_approx": {
+        "em_mean": 0.288,
+        "em_ci95": [
+          0.236,
+          0.352
+        ],
+        "f1_mean": 0.6509238095238095,
+        "loose_em_mean": 0.484,
+        "hit_mean": 0.484,
+        "hit_ci95": [
+          0.424,
+          0.5500999999999999
+        ],
+        "grounded_mean": 0.484,
+        "grounded_ci95": [
+          0.424,
+          0.5500999999999999
+        ],
+        "latency_ms_mean": 198.23164653778076,
+        "latency_ms_p95": 355.04951477050747,
+        "tokens_mean": 283.272
+      },
+      "scar_identity": {
+        "em_mean": 0.288,
+        "em_ci95": [
+          0.236,
+          0.348
+        ],
+        "f1_mean": 0.6506857142857143,
+        "loose_em_mean": 0.496,
+        "hit_mean": 0.496,
+        "hit_ci95": [
+          0.436,
+          0.568
+        ],
+        "grounded_mean": 0.496,
+        "grounded_ci95": [
+          0.436,
+          0.568
+        ],
+        "latency_ms_mean": 859.90309715271,
+        "latency_ms_p95": 859.90309715271,
+        "tokens_mean": 1275.0
+      },
+      "scar_llm": {
+        "em_mean": 0.284,
+        "em_ci95": [
+          0.232,
+          0.348
+        ],
+        "f1_mean": 0.6429396825396825,
+        "loose_em_mean": 0.496,
+        "hit_mean": 0.496,
+        "hit_ci95": [
+          0.436,
+          0.568
+        ],
+        "grounded_mean": 0.496,
+        "grounded_ci95": [
+          0.436,
+          0.568
+        ],
+        "latency_ms_mean": 904.3419361114502,
+        "latency_ms_p95": 904.3419361114502,
+        "tokens_mean": 1275.0
+      }
+    }
+  },
+  "rescored": true,
+  "rescored_config": {
+    "vote_w": 0.6,
+    "sheaf_w": 0.55,
+    "anchor_w": 0.45,
+    "gate": 0.85,
+    "extra_bonus": 0.8,
+    "use_extras": true,
+    "restriction": "identity"
+  }
+}

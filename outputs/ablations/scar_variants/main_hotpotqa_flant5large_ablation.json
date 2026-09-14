@@ -1,0 +1,81 @@
+{
+  "dataset": "hotpotqa",
+  "conflict_rate": 0.0,
+  "seed": 42,
+  "n": 800,
+  "restriction": "identity",
+  "variants": {
+    "default_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.5525,
+        "f1": 0.5449799956987463,
+        "grounded": 0.5525,
+        "em": 0.41875,
+        "loose_em": 0.5525,
+        "n": 800
+      }
+    },
+    "default_noextras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.5525,
+        "f1": 0.5449607649295156,
+        "grounded": 0.5525,
+        "em": 0.4175,
+        "loose_em": 0.5525,
+        "n": 800
+      }
+    },
+    "tuned_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.15,
+        "gate": 1.1,
+        "extra_bonus": 0.8
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.555,
+        "f1": 0.5490008290320797,
+        "grounded": 0.555,
+        "em": 0.4225,
+        "loose_em": 0.555,
+        "n": 800
+      }
+    },
+    "tuned_noextras": {
+      "cfg": {
+        "vote_w": 0.05,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.15,
+        "gate": 0.65,
+        "extra_bonus": 0.15
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.55375,
+        "f1": 0.5463887258574766,
+        "grounded": 0.55375,
+        "em": 0.42125,
+        "loose_em": 0.55375,
+        "n": 800
+      }
+    }
+  }
+}

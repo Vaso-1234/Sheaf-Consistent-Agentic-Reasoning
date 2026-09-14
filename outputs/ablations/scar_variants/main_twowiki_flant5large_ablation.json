@@ -1,0 +1,81 @@
+{
+  "dataset": "two_wiki",
+  "conflict_rate": 0.0,
+  "seed": 42,
+  "n": 400,
+  "restriction": "identity",
+  "variants": {
+    "default_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.4475,
+        "f1": 0.4834226190476191,
+        "grounded": 0.4475,
+        "em": 0.395,
+        "loose_em": 0.4475,
+        "n": 400
+      }
+    },
+    "default_noextras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.4475,
+        "f1": 0.4827083333333333,
+        "grounded": 0.4475,
+        "em": 0.395,
+        "loose_em": 0.4475,
+        "n": 400
+      }
+    },
+    "tuned_extras": {
+      "cfg": {
+        "vote_w": 0.3,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.15,
+        "gate": 0.85,
+        "extra_bonus": 0.8
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.4575,
+        "f1": 0.4905892857142857,
+        "grounded": 0.4575,
+        "em": 0.4,
+        "loose_em": 0.4575,
+        "n": 400
+      }
+    },
+    "tuned_noextras": {
+      "cfg": {
+        "vote_w": 0.3,
+        "sheaf_w": 0.25,
+        "anchor_w": 0.3,
+        "gate": 0.85,
+        "extra_bonus": 0.15
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.4525,
+        "f1": 0.48717261904761905,
+        "grounded": 0.4525,
+        "em": 0.4,
+        "loose_em": 0.4525,
+        "n": 400
+      }
+    }
+  }
+}

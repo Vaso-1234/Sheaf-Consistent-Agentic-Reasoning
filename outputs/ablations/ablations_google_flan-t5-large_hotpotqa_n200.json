@@ -1,0 +1,206 @@
+{
+  "model": "google/flan-t5-large",
+  "dataset": "hotpotqa",
+  "n": 200,
+  "seed": 42,
+  "results": [
+    {
+      "family": "restriction",
+      "label": "identity",
+      "n_samples_used": 5,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.44,
+        0.575
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.44,
+        0.575
+      ],
+      "verifier_latency_ms_mean": 132.1143651008606,
+      "verifier_latency_ms_p95": 473.1027007102965,
+      "sheaf_invocation_rate": 0.335
+    },
+    {
+      "family": "restriction",
+      "label": "linear",
+      "n_samples_used": 5,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.44,
+        0.575
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.44,
+        0.575
+      ],
+      "verifier_latency_ms_mean": 38.26975226402283,
+      "verifier_latency_ms_p95": 86.95539236068721,
+      "sheaf_invocation_rate": 0.335
+    },
+    {
+      "family": "restriction",
+      "label": "llm",
+      "n_samples_used": 5,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.44,
+        0.575
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.44,
+        0.575
+      ],
+      "verifier_latency_ms_mean": 98.77933263778687,
+      "verifier_latency_ms_p95": 157.1154117584228,
+      "sheaf_invocation_rate": 0.335
+    },
+    {
+      "family": "gate",
+      "label": "0.25",
+      "n_samples_used": 5,
+      "hit_mean": 0.5,
+      "hit_ci95": [
+        0.44,
+        0.565
+      ],
+      "grounded_mean": 0.5,
+      "grounded_ci95": [
+        0.44,
+        0.565
+      ],
+      "verifier_latency_ms_mean": 86.80608749389648,
+      "verifier_latency_ms_p95": 125.42651891708373,
+      "sheaf_invocation_rate": 0.04
+    },
+    {
+      "family": "gate",
+      "label": "0.45",
+      "n_samples_used": 5,
+      "hit_mean": 0.505,
+      "hit_ci95": [
+        0.435,
+        0.57
+      ],
+      "grounded_mean": 0.505,
+      "grounded_ci95": [
+        0.435,
+        0.57
+      ],
+      "verifier_latency_ms_mean": 117.43130803108215,
+      "verifier_latency_ms_p95": 239.37587738037098,
+      "sheaf_invocation_rate": 0.16
+    },
+    {
+      "family": "gate",
+      "label": "0.65",
+      "n_samples_used": 5,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.44,
+        0.575
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.44,
+        0.575
+      ],
+      "verifier_latency_ms_mean": 85.87676525115967,
+      "verifier_latency_ms_p95": 154.7095537185669,
+      "sheaf_invocation_rate": 0.335
+    },
+    {
+      "family": "gate",
+      "label": "0.85",
+      "n_samples_used": 5,
+      "hit_mean": 0.515,
+      "hit_ci95": [
+        0.447375,
+        0.58
+      ],
+      "grounded_mean": 0.515,
+      "grounded_ci95": [
+        0.447375,
+        0.58
+      ],
+      "verifier_latency_ms_mean": 94.26723718643188,
+      "verifier_latency_ms_p95": 172.12432622909543,
+      "sheaf_invocation_rate": 0.49
+    },
+    {
+      "family": "gate",
+      "label": "1.01",
+      "n_samples_used": 5,
+      "hit_mean": 0.515,
+      "hit_ci95": [
+        0.447375,
+        0.58
+      ],
+      "grounded_mean": 0.515,
+      "grounded_ci95": [
+        0.447375,
+        0.58
+      ],
+      "verifier_latency_ms_mean": 95.08323073387146,
+      "verifier_latency_ms_p95": 154.89563941955564,
+      "sheaf_invocation_rate": 1.0
+    },
+    {
+      "family": "n_samples",
+      "label": "3",
+      "n_samples_used": 3,
+      "hit_mean": 0.5,
+      "hit_ci95": [
+        0.437375,
+        0.57
+      ],
+      "grounded_mean": 0.5,
+      "grounded_ci95": [
+        0.437375,
+        0.57
+      ],
+      "verifier_latency_ms_mean": 206.39257907867432,
+      "verifier_latency_ms_p95": 785.8030319213858,
+      "sheaf_invocation_rate": 0.12
+    },
+    {
+      "family": "n_samples",
+      "label": "5",
+      "n_samples_used": 5,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.44,
+        0.575
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.44,
+        0.575
+      ],
+      "verifier_latency_ms_mean": 112.42787718772888,
+      "verifier_latency_ms_p95": 194.42013502120966,
+      "sheaf_invocation_rate": 0.335
+    },
+    {
+      "family": "n_samples",
+      "label": "8",
+      "n_samples_used": 8,
+      "hit_mean": 0.51,
+      "hit_ci95": [
+        0.445,
+        0.57
+      ],
+      "grounded_mean": 0.51,
+      "grounded_ci95": [
+        0.445,
+        0.57
+      ],
+      "verifier_latency_ms_mean": 223.99547934532166,
+      "verifier_latency_ms_p95": 779.9919724464407,
+      "sheaf_invocation_rate": 0.36
+    }
+  ]
+}

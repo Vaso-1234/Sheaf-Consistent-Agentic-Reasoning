@@ -1,0 +1,16 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & Mean (ms) & Median (ms) & p95 (ms) & p99 (ms) \\
+\midrule
+\multicolumn{5}{l}{\textit{Verifier only (3000 synthetic CPU calls)}} \\
+\quad SCAR (identity) & 7.16 & 7.15 & 10.92 & 12.75 \\
+\quad SCAR (linear) & 8.06 & 7.64 & 11.29 & 13.84 \\
+\quad SCAR (llm) & 68.93 & 65.25 & 90.77 & 100.63 \\
+\midrule
+\multicolumn{5}{l}{\textit{End-to-end mean per query (averaged across main-table runs)}} \\
+\quad Single-shot & 702 & -- & -- & -- \\
+\quad Self-consistency & 4807 & -- & -- & -- \\
+\quad GraphRAG-approx & 1124 & -- & -- & -- \\
+\quad \textbf{SCAR (ours)} & 8251 & -- & -- & -- \\
+\bottomrule
+\end{tabular}

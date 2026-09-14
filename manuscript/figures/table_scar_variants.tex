@@ -1,0 +1,19 @@
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{Baselines} & \multicolumn{4}{c}{SCAR variants (hit, \%)} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-9}
+Backbone & Dataset & SS & SC & GR & default & default & tuned & tuned \\
+ & & & & & (no extras) & (extras) & (no extras) & (extras) \\
+\midrule
+FLAN-T5-Large & HotpotQA & 55.4 & 54.9 & 54.4 & 55.2 & 55.2 & 55.4 & 55.5 \\
+FLAN-T5-Large & 2WikiMH & 45.2 & 45.2 & 43.0 & 44.8 & 44.8 & 45.2 & \textbf{45.8} \\
+FLAN-T5-Large & MuSiQue & 29.3 & 29.0 & 28.7 & 28.7 & 29.0 & 29.3 & \textbf{31.3} \\
+FLAN-T5-Large & PolicyBench & 65.0 & 63.7 & 64.2 & 65.2 & 65.2 & 65.5 & 65.8 \\
+Qwen 2.5-0.5B & HotpotQA & 33.2 & 34.0 & 34.4 & 32.8 & 32.4 & 34.4 & \textbf{36.4} \\
+Qwen 2.5-0.5B & 2WikiMH & 29.0 & 30.0 & 31.0 & 28.0 & 28.0 & 30.0 & \textbf{31.5} \\
+Qwen 2.5-0.5B & MuSiQue & 15.5 & 16.5 & 14.0 & 13.5 & 14.0 & 15.5 & 16.5 \\
+Qwen 2.5-0.5B & PolicyBench & 63.5 & 64.0 & 65.0 & 62.0 & 62.5 & 64.5 & \textbf{67.0} \\
+\bottomrule
+\end{tabular}%
+}

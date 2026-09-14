@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Large local caches (fetched on first run)
+data/hotpotqa/
+data/two_wiki/
+data/musique/
+data/**/cache/
+*.arrow
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# LaTeX build junk
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+
+# Logs
+**/_logs/
+**/*_logs/
+*.log

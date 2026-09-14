@@ -1,0 +1,131 @@
+{
+  "model": "google/flan-t5-large",
+  "dataset": "hotpotqa",
+  "n_actual": 800,
+  "conflict_rate": 0.0,
+  "results": {
+    "n": 800,
+    "methods": {
+      "single_shot": {
+        "em_mean": 0.41875,
+        "em_ci95": [
+          0.38309375,
+          0.45
+        ],
+        "f1_mean": 0.5454303925241425,
+        "loose_em_mean": 0.55375,
+        "hit_mean": 0.55375,
+        "hit_ci95": [
+          0.52059375,
+          0.5894062499999999
+        ],
+        "grounded_mean": 0.5525,
+        "grounded_ci95": [
+          0.51934375,
+          0.5881562499999999
+        ],
+        "latency_ms_mean": 361.87197268009186,
+        "latency_ms_p95": 862.4841570854178,
+        "tokens_mean": 453.82875
+      },
+      "self_consistency": {
+        "em_mean": 0.41875,
+        "em_ci95": [
+          0.38125,
+          0.45065625
+        ],
+        "f1_mean": 0.5430937916250416,
+        "loose_em_mean": 0.54875,
+        "hit_mean": 0.54875,
+        "hit_ci95": [
+          0.51434375,
+          0.5850624999999999
+        ],
+        "grounded_mean": 0.5475,
+        "grounded_ci95": [
+          0.5125,
+          0.58375
+        ],
+        "latency_ms_mean": 2262.243045568466,
+        "latency_ms_p95": 5181.162452697753,
+        "tokens_mean": 2269.41875
+      },
+      "graphrag_approx": {
+        "em_mean": 0.40375,
+        "em_ci95": [
+          0.37,
+          0.43690625
+        ],
+        "f1_mean": 0.5395353714268188,
+        "loose_em_mean": 0.54375,
+        "hit_mean": 0.54375,
+        "hit_ci95": [
+          0.50934375,
+          0.57690625
+        ],
+        "grounded_mean": 0.5375,
+        "grounded_ci95": [
+          0.50375,
+          0.5731562499999999
+        ],
+        "latency_ms_mean": 661.4431056380272,
+        "latency_ms_p95": 2066.982758045194,
+        "tokens_mean": 448.77625
+      },
+      "scar_identity": {
+        "em_mean": 0.4225,
+        "em_ci95": [
+          0.38875,
+          0.45315625
+        ],
+        "f1_mean": 0.549000829032079,
+        "loose_em_mean": 0.555,
+        "hit_mean": 0.555,
+        "hit_ci95": [
+          0.5218437499999999,
+          0.59125
+        ],
+        "grounded_mean": 0.555,
+        "grounded_ci95": [
+          0.5218437499999999,
+          0.59125
+        ],
+        "latency_ms_mean": 3555.767059326172,
+        "latency_ms_p95": 3555.767059326172,
+        "tokens_mean": 2255.0
+      },
+      "scar_llm": {
+        "em_mean": 0.42375,
+        "em_ci95": [
+          0.39,
+          0.45375
+        ],
+        "f1_mean": 0.549250829032079,
+        "loose_em_mean": 0.555,
+        "hit_mean": 0.555,
+        "hit_ci95": [
+          0.52125,
+          0.58875
+        ],
+        "grounded_mean": 0.555,
+        "grounded_ci95": [
+          0.52125,
+          0.58875
+        ],
+        "latency_ms_mean": 3574.631929397583,
+        "latency_ms_p95": 3574.631929397583,
+        "tokens_mean": 2255.0
+      }
+    }
+  },
+  "rescored": true,
+  "rescored_config": {
+    "vote_w": 0.45,
+    "sheaf_w": 0.1,
+    "anchor_w": 0.15,
+    "gate": 1.1,
+    "extra_bonus": 0.8,
+    "use_extras": true,
+    "restriction": "identity"
+  }
+}

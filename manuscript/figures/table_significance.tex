@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{FLAN-T5-Large (16 cells)} & \multicolumn{3}{c}{Both backbones (32 cells)} \\
+Baseline & Wins & Ties & sign-test $p$ & Wins & Ties & sign-test $p$ \\
+\midrule
+Single-shot & 6 & 10 & 0.0156 & 18 & 14 & 0.0000 \\
+Self-consistency & 8 & 8 & 0.0039 & 18 & 14 & 0.0000 \\
+GraphRAG-approx & 12 & 4 & 0.0002 & 25 & 7 & 0.0000 \\
+\bottomrule
+\end{tabular}

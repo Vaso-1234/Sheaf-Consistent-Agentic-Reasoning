@@ -1,0 +1,98 @@
+[
+  {
+    "model": "FLAN-T5-Large",
+    "dataset": "HotpotQA",
+    "stem": "main_hotpotqa_flant5large_ablation",
+    "default_extras": 55.25,
+    "default_noextras": 55.25,
+    "tuned_extras": 55.50000000000001,
+    "tuned_noextras": 55.375,
+    "single_shot": 55.375,
+    "self_consistency": 54.87499999999999,
+    "graphrag_approx": 54.37499999999999
+  },
+  {
+    "model": "Qwen 2.5-0.5B",
+    "dataset": "HotpotQA",
+    "stem": "main_hotpotqa_qwen05b_ablation",
+    "default_extras": 32.4,
+    "default_noextras": 32.800000000000004,
+    "tuned_extras": 36.4,
+    "tuned_noextras": 34.4,
+    "single_shot": 33.2,
+    "self_consistency": 34.0,
+    "graphrag_approx": 34.4
+  },
+  {
+    "model": "FLAN-T5-Large",
+    "dataset": "MuSiQue",
+    "stem": "main_musique_flant5large_ablation",
+    "default_extras": 28.999999999999996,
+    "default_noextras": 28.666666666666668,
+    "tuned_extras": 31.333333333333336,
+    "tuned_noextras": 29.333333333333332,
+    "single_shot": 29.333333333333332,
+    "self_consistency": 28.999999999999996,
+    "graphrag_approx": 28.666666666666668
+  },
+  {
+    "model": "Qwen 2.5-0.5B",
+    "dataset": "MuSiQue",
+    "stem": "main_musique_qwen05b_ablation",
+    "default_extras": 14.000000000000002,
+    "default_noextras": 13.5,
+    "tuned_extras": 16.5,
+    "tuned_noextras": 15.5,
+    "single_shot": 15.5,
+    "self_consistency": 16.5,
+    "graphrag_approx": 14.000000000000002
+  },
+  {
+    "model": "FLAN-T5-Large",
+    "dataset": "PolicyBench",
+    "stem": "main_policybench_flant5large_ablation",
+    "default_extras": 65.25,
+    "default_noextras": 65.25,
+    "tuned_extras": 65.75,
+    "tuned_noextras": 65.5,
+    "single_shot": 65.0,
+    "self_consistency": 63.74999999999999,
+    "graphrag_approx": 64.25
+  },
+  {
+    "model": "Qwen 2.5-0.5B",
+    "dataset": "PolicyBench",
+    "stem": "main_policybench_qwen05b_ablation",
+    "default_extras": 62.5,
+    "default_noextras": 62.0,
+    "tuned_extras": 67.0,
+    "tuned_noextras": 64.5,
+    "single_shot": 63.5,
+    "self_consistency": 64.0,
+    "graphrag_approx": 65.0
+  },
+  {
+    "model": "FLAN-T5-Large",
+    "dataset": "2WikiMH",
+    "stem": "main_twowiki_flant5large_ablation",
+    "default_extras": 44.75,
+    "default_noextras": 44.75,
+    "tuned_extras": 45.75,
+    "tuned_noextras": 45.25,
+    "single_shot": 45.25,
+    "self_consistency": 45.25,
+    "graphrag_approx": 43.0
+  },
+  {
+    "model": "Qwen 2.5-0.5B",
+    "dataset": "2WikiMH",
+    "stem": "main_twowiki_qwen05b_ablation",
+    "default_extras": 28.000000000000004,
+    "default_noextras": 28.000000000000004,
+    "tuned_extras": 31.5,
+    "tuned_noextras": 30.0,
+    "single_shot": 28.999999999999996,
+    "self_consistency": 30.0,
+    "graphrag_approx": 31.0
+  }
+]

@@ -1,0 +1,13 @@
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{4}{c}{Qwen2.5-0.5B} & \multicolumn{4}{c}{FLAN-T5-Large} \\
+  & HotpotQA & 2WikiMH & MuSiQue & PolicyBench & HotpotQA & 2WikiMH & MuSiQue & PolicyBench \\
+\midrule
+Single-shot & 24.8 & 23.0 & 9.0 & 43.0 & 41.9 & 39.5 & 20.0 & 43.5 \\
+Self-consistency & 24.4 & 24.5 & 9.5 & 42.0 & 41.9 & 39.2 & 20.0 & 42.8 \\
+GraphRAG-approx & 22.0 & 22.0 & 10.0 & 37.0 & 40.4 & 37.8 & 21.7 & 44.8 \\
+\textbf{SCAR (ours)} & \textbf{26.0} & 24.0 & 10.5 & 42.5 & \textbf{42.4} & \textbf{40.0} & 21.7 & 44.0 \\
+\bottomrule
+\end{tabular}%
+}

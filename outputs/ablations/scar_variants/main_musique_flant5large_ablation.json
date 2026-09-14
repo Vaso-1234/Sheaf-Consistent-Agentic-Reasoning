@@ -1,0 +1,81 @@
+{
+  "dataset": "musique",
+  "conflict_rate": 0.0,
+  "seed": 42,
+  "n": 300,
+  "restriction": "identity",
+  "variants": {
+    "default_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.29,
+        "f1": 0.3036314611314612,
+        "grounded": 0.29,
+        "em": 0.2,
+        "loose_em": 0.29,
+        "n": 300
+      }
+    },
+    "default_noextras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.2866666666666667,
+        "f1": 0.30222405372405375,
+        "grounded": 0.2866666666666667,
+        "em": 0.2,
+        "loose_em": 0.2866666666666667,
+        "n": 300
+      }
+    },
+    "tuned_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.0,
+        "gate": 0.65,
+        "extra_bonus": 0.8
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.31333333333333335,
+        "f1": 0.31949870499870503,
+        "grounded": 0.31333333333333335,
+        "em": 0.21666666666666667,
+        "loose_em": 0.31333333333333335,
+        "n": 300
+      }
+    },
+    "tuned_noextras": {
+      "cfg": {
+        "vote_w": 0.05,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.15,
+        "gate": 0.65,
+        "extra_bonus": 0.15
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.29333333333333333,
+        "f1": 0.30935063085063097,
+        "grounded": 0.29333333333333333,
+        "em": 0.20333333333333334,
+        "loose_em": 0.29333333333333333,
+        "n": 300
+      }
+    }
+  }
+}

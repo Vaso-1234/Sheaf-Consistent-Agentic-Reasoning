@@ -1,0 +1,81 @@
+{
+  "dataset": "policybench",
+  "conflict_rate": 0.4,
+  "seed": 42,
+  "n": 400,
+  "restriction": "identity",
+  "variants": {
+    "default_extras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.6525,
+        "f1": 0.7325833333333346,
+        "grounded": 0.6525,
+        "em": 0.44,
+        "loose_em": 0.6525,
+        "n": 400
+      }
+    },
+    "default_noextras": {
+      "cfg": {
+        "vote_w": 0.45,
+        "sheaf_w": 0.3,
+        "anchor_w": 0.35,
+        "gate": 0.65,
+        "extra_bonus": 0.3
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.6525,
+        "f1": 0.7328214285714297,
+        "grounded": 0.6525,
+        "em": 0.44,
+        "loose_em": 0.6525,
+        "n": 400
+      }
+    },
+    "tuned_extras": {
+      "cfg": {
+        "vote_w": 0.3,
+        "sheaf_w": 0.4,
+        "anchor_w": 0.15,
+        "gate": 0.85,
+        "extra_bonus": 0.8
+      },
+      "use_extras": true,
+      "summ": {
+        "hit": 0.6575,
+        "f1": 0.7417678571428581,
+        "grounded": 0.6575,
+        "em": 0.44,
+        "loose_em": 0.6575,
+        "n": 400
+      }
+    },
+    "tuned_noextras": {
+      "cfg": {
+        "vote_w": 0.3,
+        "sheaf_w": 0.1,
+        "anchor_w": 0.15,
+        "gate": 0.85,
+        "extra_bonus": 0.15
+      },
+      "use_extras": false,
+      "summ": {
+        "hit": 0.655,
+        "f1": 0.7338214285714296,
+        "grounded": 0.655,
+        "em": 0.44,
+        "loose_em": 0.655,
+        "n": 400
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset": "hotpotqa",
+  "n_actual": 250,
+  "conflict_rate": 0.0,
+  "results": {
+    "n": 250,
+    "methods": {
+      "single_shot": {
+        "em_mean": 0.248,
+        "em_ci95": [
+          0.2,
+          0.3
+        ],
+        "f1_mean": 0.35082857142857143,
+        "loose_em_mean": 0.332,
+        "hit_mean": 0.332,
+        "hit_ci95": [
+          0.27390000000000003,
+          0.388
+        ],
+        "grounded_mean": 0.332,
+        "grounded_ci95": [
+          0.27390000000000003,
+          0.388
+        ],
+        "latency_ms_mean": 990.7905941009521,
+        "latency_ms_p95": 1825.0539422035201,
+        "tokens_mean": 479.208
+      },
+      "self_consistency": {
+        "em_mean": 0.244,
+        "em_ci95": [
+          0.196,
+          0.296
+        ],
+        "f1_mean": 0.3393545787545787,
+        "loose_em_mean": 0.34,
+        "hit_mean": 0.34,
+        "hit_ci95": [
+          0.284,
+          0.404
+        ],
+        "grounded_mean": 0.34,
+        "grounded_ci95": [
+          0.284,
+          0.404
+        ],
+        "latency_ms_mean": 5617.60106086731,
+        "latency_ms_p95": 9460.845196247099,
+        "tokens_mean": 2397.476
+      },
+      "graphrag_approx": {
+        "em_mean": 0.22,
+        "em_ci95": [
+          0.172,
+          0.276
+        ],
+        "f1_mean": 0.3172951270951271,
+        "loose_em_mean": 0.344,
+        "hit_mean": 0.344,
+        "hit_ci95": [
+          0.288,
+          0.40209999999999996
+        ],
+        "grounded_mean": 0.34,
+        "grounded_ci95": [
+          0.284,
+          0.39809999999999995
+        ],
+        "latency_ms_mean": 1489.5901079177856,
+        "latency_ms_p95": 2811.0491991043077,
+        "tokens_mean": 479.756
+      },
+      "scar_identity": {
+        "em_mean": 0.26,
+        "em_ci95": [
+          0.212,
+          0.312
+        ],
+        "f1_mean": 0.3532666666666667,
+        "loose_em_mean": 0.364,
+        "hit_mean": 0.364,
+        "hit_ci95": [
+          0.3059,
+          0.424
+        ],
+        "grounded_mean": 0.364,
+        "grounded_ci95": [
+          0.3059,
+          0.424
+        ],
+        "latency_ms_mean": 3820.7550048828125,
+        "latency_ms_p95": 3820.7550048828125,
+        "tokens_mean": 2530.0
+      },
+      "scar_llm": {
+        "em_mean": 0.256,
+        "em_ci95": [
+          0.208,
+          0.308
+        ],
+        "f1_mean": 0.35573333333333335,
+        "loose_em_mean": 0.368,
+        "hit_mean": 0.368,
+        "hit_ci95": [
+          0.3099,
+          0.428
+        ],
+        "grounded_mean": 0.368,
+        "grounded_ci95": [
+          0.3099,
+          0.428
+        ],
+        "latency_ms_mean": 3810.286045074463,
+        "latency_ms_p95": 3810.286045074463,
+        "tokens_mean": 2530.0
+      }
+    }
+  },
+  "rescored": true,
+  "rescored_config": {
+    "vote_w": 0.6,
+    "sheaf_w": 0.4,
+    "anchor_w": 0.15,
+    "gate": 1.1,
+    "extra_bonus": 0.8,
+    "use_extras": true,
+    "restriction": "identity"
+  }
+}
